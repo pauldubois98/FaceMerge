@@ -202,7 +202,7 @@ def fit_image(image_name, img_match="profil.jpg"):
     return croped_img
 
 
-def merge_images(image_names):
+def merge(image_names):
     fitted_imgs = [fit_image(image_name) for image_name in image_names]
     merged_img = np.average( fitted_imgs, axis=0)
     # for fitted_img in fitted_imgs:
@@ -213,9 +213,14 @@ def merge_images(image_names):
     # cv2.destroyAllWindows()
     return merged_img
 
+def merge_images(imagein_names, imageout_name):
+    merged_img = merge( imagein_names )
+    cv2.imwrite( imageout_name, merged_img*255)
+
+
 
 if __name__=="__main__":
     #merge_images( ("aiden.png", "profil.jpg") )
-    merged_img = merge_images( ("aiden.png", "paul.jpg") )
-    cv2.imwrite('aiden_paul.jpg', merged_img*255)
+    merge_images( ("aiden.png", "paul.jpg"), "aiden_paul.jpg" )
+    merge_images( ("paul.jpg", "aiden.png"), "paul_aiden.jpg" )
 

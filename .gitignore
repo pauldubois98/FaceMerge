@@ -1,2 +1,6 @@
 .vscode/
 .ipynb_checkpoints/
+__pycache__/
+tests/
+app.yaml
+flask_cmd.txt
