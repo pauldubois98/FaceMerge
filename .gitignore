@@ -5,3 +5,4 @@ tests/
 app.yaml
 flask_cmd.txt
 uploads/out.jpg
+*.url

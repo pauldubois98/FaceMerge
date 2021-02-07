@@ -1,0 +1,64 @@
+h1{
+    color: red;
+    text-align: center;
+}
+h2{
+    color: purple;
+    text-align: center;
+}
+@keyframes transformPersonA{
+    0% {
+        /*  matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+        transform: matrix(1.2,-0.08,0.08,1.2, 200, 85);
+        opacity: 0.5;
+    }
+    20% {
+        /*  matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+        transform: matrix(1.2,-0.08,0.08,1.2, 200, 85);
+        opacity: 0.5;
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes transformPersonB{
+    0% {
+        transform: translate(205px, -95px);
+        opacity: 0.5;
+    }
+    20% {
+        transform: translate(205px, -95px);
+        opacity: 0.5;
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+img{
+    padding: 0;
+    margin: 0;
+}
+#personA{
+    animation-duration: 3.5s;
+    animation-name: transformPersonA;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+#personB{
+    animation-duration: 3.5s;
+    animation-name: transformPersonB;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+body{
+    max-width: 45em;
+    margin: auto;
+}
+
