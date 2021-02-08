@@ -10,12 +10,12 @@ h2{
     0% {
         /*  matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
         transform: matrix(1.2,-0.08,0.08,1.2, 200, 85);
-        opacity: 0.5;
+        opacity: 0.7;
     }
     20% {
         /*  matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
         transform: matrix(1.2,-0.08,0.08,1.2, 200, 85);
-        opacity: 0.5;
+        opacity: 0.7;
     }
     80% {
         transform: translate(0, 0);
@@ -27,11 +27,11 @@ h2{
 @keyframes transformPersonB{
     0% {
         transform: translate(205px, -95px);
-        opacity: 0.5;
+        opacity: 0.4;
     }
     20% {
         transform: translate(205px, -95px);
-        opacity: 0.5;
+        opacity: 0.4;
     }
     80% {
         transform: translate(0, 0);
